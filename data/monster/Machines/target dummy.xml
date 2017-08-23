@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Target Dummy" nameDescription="a target dummy" race="blood" experience="0" speed="0" manacost="0">
+	<health now="100000" max="100000"/>
+	<look type="304" corpse="9801"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+	<flag summonable="0"/>
+	<flag attackable="1"/>
+	<flag hostile="1"/>
+	<flag illusionable="0"/>
+	<flag convinceable="0"/>
+	<flag pushable="0"/>
+	<flag canpushitems="0"/>
+	<flag staticattack="100"/>
+	<flag targetdistance="1"/>
+	<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" chance="100" radius="3" target="0" min="-0" max="-5">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="0" defense="0">
+		<defense name="healing" interval="10000" chance="100" min="100000" max="100000">
+			<attribute key="areaEffect" value="giftwraps"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element drownPercent="-95"/>
+		<element firePercent="-95"/>
+		<element physicalPercent="-75"/>
+		<element earthpercent="-95"/>
+		<element energyPercent="-95"/>
+		<element deathPercent="-95"/>
+		<element icePercent="-95"/>
+		<element holyPercent="-95"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="I hope you are enjoying your sparring Sir or Ma'am!"/>
+		<voice sentence="Threat level rising!"/>
+		<voice sentence="Engaging in hostile interaction!"/>
+		<voice sentence="Rrrtttarrrttarrrtta"/>
+		<voice sentence="Please feel free to hit me Sir or Ma'am!"/>
+		<voice sentence="klonk klonk klonk"/>
+		<voice sentence="Self-diagnosis running."/>
+		<voice sentence="Battle simulation proceeding."/>
+		<voice sentence="Repairs initiated!"/>
+	</voices>
+</monster>
